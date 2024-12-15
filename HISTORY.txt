@@ -1,0 +1,1000 @@
+  399  cd ..
+  400  ls
+  401  cd Downloads
+  402  ls
+  403  cat Makefile
+  404  rm HISTORY.txt
+  405  ls
+  406  history > HISTORY.txt
+  407  ls
+  408  cat HISTORY.txt
+  409  ls
+  410  cd hello
+  411  ls
+  412  cd ..
+  413  mkdir hello2
+  414  cd hello2
+  415  touch hello1.c
+  416  touch hello2.c
+  417  touch Makefile
+  418  mkdir inc
+  419  cd inc
+  420  touch hello1.h
+  421  cd ..
+  422  vim hello1.c
+  423  cat hello1.c
+  424  vim hello2.c
+  425  vim Makefile
+  426  ls
+  427  cd inc
+  428  ls
+  429  vim hello1.h
+  430  cd ..
+  431  cd hello2
+  432  cd ..
+  433  ls /Downloads
+  434  ls Downloads
+  435  cd hello2
+  436  export KDIR=$HOME/repos/linux-stable
+  437  export PATH=/opt/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/bin:$PATH
+  438  export CROSS_COMPILE='ccache arm-linux-gnueabihf-'
+  439  export ARCH=arm
+  440  make
+  441  vim Makefile
+  442  make
+  443  ls
+  444  cp hello1.ko ~/repos/busybox/_install/hello1.ko
+  445  cp hello2.ko ~/repos/busybox/_install/hello2.ko
+  446  cd
+  447  cd repos/busybox/_install
+  448  find . | cpio -o -H newc | gzip > ../rootfs.cpio.gz
+  449  ls
+  450  cd ..
+  451  ls
+  452  qemu-system-arm -kernel _install/boot/zImage -initrd rootfs.cpio.gz -machine virt -nographic -m 512 --append "root=/dev/ram0 rw console=ttyAMA0,115200 mem=512M"
+  453  cd ..
+  454  cd .
+  455  cd
+  456  cd Downloads
+  457  ls
+  458  rm HISTORY.txt
+  459  history > HISTORY.txt
+  460  ls
+  461  cd ..
+  462  ls
+  463  cd hello2
+  464  ls
+  465  cp hello1.c ~/Downloads
+  466  cp hello2.c ~/Downloads
+  467  ls ~/Downloads
+  468  cd ..
+  469  cd Downloads
+  470  rm Makefile
+  471  cd ..
+  472  cd hello2
+  473  cp Makefile ~/Downloads
+  474  ls
+  475  cd inc
+  476  ls
+  477  cp hello1.h ~/Downloads
+  478  cd. .
+  479  cd
+  480  cd Downloads
+  481  ls
+  482  cd hello2
+  483  ls
+  484  cd ..
+  485  rm -r hello2
+  486  mkdir hello2
+  487  cd hello2
+  488  ls
+  489  mkdir inc
+  490  vim hello1.c
+  491  vim hello2.c
+  492  ls
+  493  vim hello2.c
+  494  ls
+  495  rm hello2.c
+  496  cp ~/Downloads/hello2.c ~/hello2/
+  497  ls
+  498  cat hello2.c
+  499  cd ..
+  500  cp ~/Downloads/Makefile ~/hello2/
+  501  cd ~/Downloads/hello1.h ~/hello2/
+  502  ls
+  503  cp ~/Downloads/hello1.h ~/hello2/
+  504  cd hello2
+  505  ls
+  506  mv hello1.h /inc/
+  507  mv hello1.h /inc
+  508  ls
+  509  cd inc
+  510  ls
+  511  cd ..
+  512  sudo mv hello1.h /inc
+  513  ls
+  514  cd inc
+  515  ls
+  516  cp ~/Downloads/hello1.h ~/hello2
+  517  ls
+  518  cd ..
+  519  ls
+  520  mv hello1.h ~/hello2/inc
+  521  ls
+  522  cd inc
+  523  ls
+  524  cat hello1.h
+  525  cd ..
+  526  ls
+  527  cat hello1.c
+  528  ls hello2.c
+  529  ls
+  530  cat hello2.c
+  531  vim Makefile
+  532  make
+  533  ls
+  534  mv /inc/hello1.h ~/hello2/
+  535  mv ~/hello2/inc/hello1.h ~/hello2/
+  536  ls
+  537  rm inc
+  538  ls inc
+  539  rm -r inc
+  540  ls
+  541  make
+  542  vim hello1.c
+  543  vim Makefile
+  544  vim hello2.c
+  545  make
+  546  ls
+  547  cp hello1.ko ~repos/busybox/_install
+  548  cp hello1.ko ~/repos/busybox/_install/hello1.ko
+  549  cp hello2.ko ~/repos/busybox/_install/hello2.ko
+  550  cd ~repos/busybox/_install
+  551  cd ..
+  552  cd repos/busybox/_install
+  553  ls
+  554  cd ..
+  555  find . | cpio -o -H newc | gzip > ../rootfs.cpio.gz
+  556  qemu-system-arm -kernel _install/boot/zImage -initrd rootfs.cpio.gz -machine virt -nographic -m 512 --append "root=/dev/ram0 rw console=ttyAMA0,115200 mem=512M"
+  557  ls
+  558  cd _install
+  559  ls
+  560  cat hello1.ko
+  561  cd ..
+  562  cd _install
+  563  ls
+  564  rm hello1.ko
+  565  rm hello.ko
+  566  rm hello2.ko
+  567  cd ..
+  568  cd +
+  569  cd -
+  570  ls
+  571  cd ..
+  572  cd hello2
+  573  ls
+  574  cat hello1.c
+  575  cd ..
+  576  cd -
+  577  ls
+  578  rm hello1.ko
+  579  rm hello1.mod
+  580  rm hello1.mod.c
+  581  rm hello1.mod.o
+  582  rm hello1.o
+  583  rm hello2.ko
+  584  rm hello2.mod
+  585  rm hello2.mod.c
+  586  rm hello2.mod.o
+  587  rm hello2.o
+  588  rm Module.symvers
+  589  rm modules.order
+  590  ls
+  591  cat hello2.c
+  592  ls ~/Downloads
+  593  export KDIR=$HOME/repos/linux-stable
+  594  export PATH=/opt/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/bin:$PATH
+  595  export CROSS_COMPILE='ccache arm-linux-gnueabihf-'
+  596  export ARCH=arm
+  597  cat hello1.c
+  598  cat hello2.c
+  599  cat Makefile
+  600  cat hello1.h
+  601  make
+  602  export PATH=/opt/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/bin:$PATH
+  603  export CROSS_COMPILE='ccache arm-linux-gnueabihf-'
+  604  export ARCH=arm
+  605  make
+  606  which arm-linux-gnueabihf-gcc
+  607  arm-linux-gnueabihf-gcc --version
+  608  export PATH=/opt/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/bin:$PATH
+  609  which arm-linux-gnueabihf-gcc
+  610  export CROSS_COMPILE=arm-linux-gnueabihf-
+  611  echo $CROSS_COMPILE
+  612  echo $ARCH
+  613  echo $PATH
+  614  make
+  615  echo $ARCH
+  616  echo $CROSS_COMPILE
+  617  echo $PATH
+  618  arm-linux-gnueabihf-gcc --version
+  619  ls /opt/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/bin/
+  620  export CROSS_COMPILE=arm-linux-gnueabihf-
+  621  sudo apt install gcc-arm-linux-gnueabihf
+  622  make
+  623  make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- menuconfig
+  624  ls
+  625  cd ~/Downloads
+  626  ls
+  627  make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- menuconfig
+  628  export KDIR=$HOME/repos/linux-stable
+  629  export PATH=/opt/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/bin:$PATH
+  630  export CROSS_COMPILE='ccache arm-linux-gnueabihf-'
+  631  export ARCH=arm
+  632  cd ..
+  633  cd hello2
+  634  make
+  635  sudo apt install gcc-9
+  636  gcc --version
+  637  make
+  638  sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 11
+  639  sudo update gcc
+  640  sudo apt install gcc
+  641  sudo apt install gcc-11
+  642  gcc --version
+  643  sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 11
+  644  gcc --version
+  645  make
+  646  sudo apt install gcc-13
+  647  gcc --version
+  648  sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 13
+  649  gcc --version
+  650  make
+  651  sudo update-alternatives --config gcc
+  652  make clean
+  653  make
+  654  make clean
+  655  ls
+  656  unset ARCH CROSS_COMPILE
+  657  make
+  658  ls
+  659  make clean
+  660  ls
+  661  make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
+  662  ls /opt/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/bin
+  663  make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- menuconfig
+  664  menuconfig
+  665  ls
+  666  ls ~/Downloads
+  667  sudo apt update
+  668  sudo apt install gcc-13 g++-13
+  669  sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 100
+  670  sudo update-alternative --install /usr/bin/g++ g++ /usr/bin/g++-13 100
+  671  sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-13 100
+  672  sudo update-alternatives --config gcc
+  673  sudo update-alternatives --config g++
+  674  gcc --version
+  675  make
+  676  ls
+  677  cp hello1.ko ~/repos/busybox/_install/hello1.ko
+  678  cp hello2.ko ~/repos/busybox/_install/hello2.ko
+  679  cd ..
+  680  cd repos
+  681  cd busybox
+  682  cd _install
+  683  ls
+  684  cd ..
+  685  find . | cpio -o -H newc | gzip > ../rootfs.cpio.gz
+  686  ls
+  687  rm rootfs.cpio.gz
+  688  ls
+  689  find . | cpio -o -H newc | gzip > ../rootfs.cpio.gz
+  690  qemu-system-arm -kernel _install/boot/zImage -initrd rootfs.cpio.gz -machine virt -nographic -m 512 --append "root=/dev/ram0 rw console=ttyAMA0,115200 mem=512M"
+  691  ls
+  692  cd ..
+  693  ls
+  694  rm rootfs.cpio.gz
+  695  cd busybox
+  696  find . | cpio -o -H newc | gzip > rootfs.cpio.gz
+  697  ls
+  698  rm rootfs .cpio.gz
+  699  ls
+  700  rm rootfs.cpio.gz
+  701  cd _install
+  702  ls
+  703  find . | cpio -o -H newc | gzip > ../rootfs.cpio.gz
+  704  cd ..
+  705  ls
+  706  qemu-system-arm -kernel _install/boot/zImage -initrd rootfs.cpio.gz -machine virt -nographic -m 512 --append "root=/dev/ram0 rw console=ttyAMA0,115200 mem=512M"
+  707  ls
+  708  rm rootfs.cpio.gz
+  709  cd ..
+  710  cd hello2.
+  711  cd hello2
+  712  ls
+  713  make clean
+  714  ls
+  715  export KDIR=$HOME/repos/linux-stable
+  716  export PATH=/opt/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/bin:$PATH
+  717  export CROSS_COMPILE='ccache arm-linux-gnueabihf-'
+  718  export ARCH=arm
+  719  ls
+  720  cd ..
+  721  cd repos/busybox/_install
+  722  ls
+  723  rm hello1.ko
+  724  rm hello2.ko
+  725  cd ..
+  726  ls
+  727  cd hello2
+  728  ls
+  729  make
+  730  ls ~/opt/
+  731  ls /opt/
+  732  ls /usr/src/linux-headers-$(uname -r)
+  733  gcc --version
+  734  export CC=x86_64-linux-gnu-gcc
+  735  make clean
+  736  make ARCH=x86_64 CC=$CC
+  737  ls
+  738  which ld
+  739  export PATH=/usr/bin:$PATH
+  740  which ld
+  741  make clean
+  742  make ARCH=x86_64 CC=$CC LD=/usr/bin/ld
+  743  ls
+  744  cp hello1.ko ~/repos/busybox/_install/hello1.ko
+  745  cp hello2.ko ~/repos/busybox/_install/hello2.ko
+  746  cd ..
+  747  cd repos/busybox/_install
+  748  ls
+  749  find . | cpio -o -H newc | gzip > ../rootfs.cpio.gz
+  750  cd ..
+  751  ls
+  752  cat rootfs.cpio.gz
+  753  1;1;120;120;1;0x61;1;21;22c61;1;21;22c1;1;120;120;1;0x1;1;120;120;1;0x1;1;120;120;1;0x1;1;120;120;1;0x61;1;21;22cq1;1;120;120;1;0x61;1;21;22c
+  754  ls
+  755  cd rootfs.cpio.gz
+  756  ls
+  757  qemu-system-arm -kernel _install/boot/zImage -initrd rootfs.cpio.gz -machine virt -nographic -m 512 --append "root=/dev/ram0 rw console=ttyAMA0,115200 mem=512M"
+  758  cpio -tvf rootfs.cpio.gz
+  759  gdb vmlinux
+  760  gdb qemu
+  761  cd repos/busybox
+  762  gdb
+  763  gdb ~/repos/busybox
+  764  cd ..
+  765  ls
+  766  cd ..
+  767  ls
+  768  cd ~
+  769  ls
+  770  cd hello2
+  771  make clean
+  772  ls
+  773  cd ..
+  774  cd repos
+  775  ls
+  776  cd busybox
+  777  ls
+  778  rm rootfs.cpio.gz
+  779  ls
+  780  cd _install
+  781  ls
+  782  find /_install | cpio -o -H newc | gzip > ../rootfs.cpio.gz
+  783  cd ..
+  784  ls
+  785  rm rootfs.cpio.gz
+  786  cd _isntall
+  787  ls
+  788  cd _install
+  789  ls
+  790  find . | cpio -o -H newc | gzip > ../rootfs.cpio.gz
+  791  cd ..
+  792  qemu-system-arm -kernel _install/boot/zImage -initrd rootfs.cpio.gz -machine virt -nographic -m 512 --append "root=/dev/ram0 rw console=ttyAMA0,115200 mem=512M"
+  793  gcc --version
+  794  cd ..
+  795  cd hello2
+  796  ls
+  797  make clean
+  798  sudo update-alternatives --config gcc
+  799  sudo update-alternatives --config g++
+  800  export KDIR=$HOME/repos/linux-stable
+  801  export PATH=/opt/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/bin:$PATH
+  802  export CROSS_COMPILE='ccache arm-linux-gnueabihf-'
+  803  export ARCH=arm
+  804  make
+  805  gcc --version
+  806  cat Makefile
+  807  cd ..
+  808  cd repos/busybox
+  809  ls
+  810  qemu-system-arm -kernel _install/boot/zImage -initrd rootfs.cpio.gz -machine virt -nographic -m 512 --append "root=/dev/ram0 rw console=ttyAMA0,115200 mem=512M"
+  811  ls
+  812  rm rootfs.cpio.gz
+  813  cd _install
+  814  ls
+  815  rm hello1.ko
+  816  rm hello2.ko
+  817  cd ..
+  818  cd hello2
+  819  sudo apt install gcc-8 g++-8
+  820  apt install gcc-8
+  821  sudo apt install gcc-8
+  822  sudo apt install g++-8
+  823  sudo apt install g++-9
+  824  export CROSS_COMPILE=arm-linux-gnueabihf-
+  825  make ARCH=arm CC=arm-linux-gnueabihf-gcc-8
+  826  ls
+  827  make ARCH=arm CC=arm-linux-gnueabihf-gcc-9
+  828  ls
+  829  make ARCH=arm
+  830  wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.19.325.tar.gz
+  831  ls
+  832  mv linux-4.19.325.tar.gz ~/Downloads
+  833  ls
+  834  cd ..
+  835  cd Downloads
+  836  ls
+  837  tar -xvf linux-4.19.325.tar.gz
+  838  cd linux-4.19.325
+  839  export ARCH=arm
+  840  export CROSS_COMPILE=arm-linux-gnueabihf-
+  841  zcat /proc/config.gz > .config
+  842  cd ..
+  843  cd hello2
+  844  make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- oldconfig
+  845  make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- prepare
+  846  make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -C ~/Downloads/linux-4.19.325 M=$(pwd) modules
+  847  cd ..
+  848  cd Downloads
+  849  cd linux-4.19.325
+  850  make oldconfig
+  851  make prepare
+  852  cd ..
+  853  cd hello2
+  854  make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -C ~/Downloads/linux-4.19.325 M=$(pwd) modules
+  855  ls
+  856  make clean
+  857  make
+  858  update-alternatives --config gcc
+  859  sudo update-alternatives --config gcc
+  860  make
+  861  ls
+  862  sudo update-alternatives --config gcc
+  863  export CC=gcc-13
+  864  make
+  865  sudo update-alternatives --config gcc
+  866  make
+  867  sudo apt install gcc-13.3.0
+  868  sudo apt install gcc-13
+  869  export CROSS_COMPILE=arm-linux-gnueabihf-
+  870  export ARCH=arm
+  871  export CC=arm-linux-gnueabihf-gcc
+  872  make
+  873  sudo update-alternatives --config gcc
+  874  make
+  875  sudo apt-get install linux-headers-$(uname -r)
+  876  make
+  877  cat Makefile
+  878  vim Makefile
+  879  make
+  880  sudo apt-get install linux-headers-$(uname -r)
+  881  sudo apt-get install gcc-arm-linux-gnueabihf
+  882  cat Makefile
+  883  cd ..
+  884  cd lib
+  885  cd /
+  886  cd lib
+  887  cd modules
+  888  ls
+  889  cd 6.8.0-50-generic
+  890  ;s
+  891  ls
+  892  shell uname -r
+  893  uname -r
+  894  cd build
+  895  ls
+  896  cat Makefile
+  897  ls
+  898  cd ..
+  899  ~
+  900  cd ~
+  901  ls
+  902  cd hello2
+  903  ls
+  904  cat Makefile
+  905  ls
+  906  rm Makefile
+  907  cp ~/Downloads/Makefile .
+  908  ls
+  909  cat Makefile
+  910  vim Makefile
+  911  make
+  912  ls
+  913  make clear
+  914  ls
+  915  make clear
+  916  ls
+  917  rm hello2.ko
+  918  rm hello2.mod.c
+  919  rm hello2.mod.o
+  920  rm hello2.o
+  921  rm modules.order
+  922  rm Module.symvers
+  923  ls
+  924  vim Makefile
+  925  cat Makefile
+  926  cat hello1.c
+  927  cat hello2.c
+  928  cat hello1.h
+  929  rm Makefile
+  930  ls
+  931  vim Makefile
+  932  rm hello1.c
+  933  rm hello2.c
+  934  vim hello1.c
+  935  vim hello2.c
+  936  rm hello1.h
+  937  vim hello1.h
+  938  make
+  939  insmod hello2.ko COUNTER=5
+  940  sudo insmod hello2.ko COUNTER=5
+  941  sudo insmod hello1.ko
+  942  uname -r
+  943  modinfo hello2.ko | grep vermagic
+  944  ls
+  945  cp hello1.ko ~/repos/busybox/_isntall
+  946  cp hello2.ko ~/repos/busybox/_install
+  947  cd ..
+  948  ls
+  949  cd repos
+  950  cd busybox
+  951  cd _install
+  952  ls
+  953  cd ..
+  954  ls
+  955  cd ..
+  956  cd hello2
+  957  cp hello1.ko ~/repos/busybox/_install
+  958  cd ~/repos/busybox
+  959  ls
+  960  cd _install
+  961  ls
+  962  find . | cpio -o -H newc | gzip > ../rootfs.cpio.gz
+  963  cd ..
+  964  qemu-system-arm -kernel _install/boot/zImage -initrd rootfs.cpio.gz -machine virt -nographic -m 512 --append "root=/dev/ram0 rw console=ttyAMA0,115200 mem=512M"
+  965  cd ..
+  966  ls
+  967  cd hello2
+  968  gdb
+  969  $(CROSS_COMPILE) objdump -dS hello1.ko.unstripped | less
+  970  $(CROSS_COMPILE) objdump -dS hello1.ko | less
+  971  objdump -dS hello1.ko | less
+  972  qemu-system-arm -kernel _install/boot/zImage -initrd rootfs.cpio.gz -machine virt -m 512 --append "root=/dev/ram0 rw console=ttyAMA0,115200 mem=512M"
+  973  cd ..
+  974  cd repos
+  975  cd busybox
+  976  qemu-system-arm -kernel _install/boot/zImage -initrd rootfs.cpio.gz -machine virt -m 512 --append "root=/dev/ram0 rw console=ttyAMA0,115200 mem=512M"
+  977  quit
+  978  gdb vmlinux
+  979  qemu-system-arm -kernel _install/boot/zImage -initrd rootfs.cpio.gz -nographic -machine virt -m 512 --append "root=/dev/ram0 rw console=ttyAMA0,115200 mem=512M"
+  980  qemu-system-arm -kernel _install/boot/zImage -initrd rootfs.cpio.gz -s -S -nographic -machine virt -m 512 --append "root=/dev/ram0 rw console=ttyAMA0,115200 mem=512M"
+  981  cd repos/busybox
+  982  cd ..c
+  983  cd ..
+  984  ls
+  985  cd hello
+  986  ls
+  987  cat Makefile
+  988  cd ..
+  989  cd repos/busybox/_install
+  990  ls
+  991  cd ..
+  992  ls
+  993  qemu-system-arm -kernel _install/boot/zImage -initrd rootfs.cpio.gz -nographic -machine virt -m 512 --append "root=/dev/ram0 rw console=ttyAMA0,115200 mem=512M"
+  994  cd ..
+  995  ls
+  996  vim fasd
+  997  cd hello
+  998  ls
+  999  cat Makefile
+ 1000  vim Makefile
+ 1001  gdb
+ 1002  ls
+ 1003  cd fasd
+ 1004  cat fasd
+ 1005  rm fasd
+ 1006  ls
+ 1007  cd repos
+ 1008  ls
+ 1009  cd ..
+ 1010  cd hello
+ 1011  ls
+ 1012  ls hello2
+ 1013  make clear
+ 1014  ls
+ 1015  cd hello2
+ 1016  make clear
+ 1017  ls
+ 1018  make clear
+ 1019  cp hello1.c ~/Downloads
+ 1020  cp hello2.c ~/Downloads
+ 1021  cp Makefile ~/Downloads
+ 1022  cp hello1.h ~/Downloads
+ 1023  cd ..
+ 1024  cd Downloads
+ 1025  ls
+ 1026  cat hello1.c
+ 1027  cat hello2.c
+ 1028  cat hello1.h
+ 1029  cat Makefile
+ 1030  cd ..
+ 1031  cd hello2
+ 1032  ls
+ 1033  cd ..
+ 1034  cd repos
+ 1035  ls
+ 1036  cd linux-stable
+ 1037  ls
+ 1038  cd ..
+ 1039  cd busybox
+ 1040  ls
+ 1041  cd ~/repos/linux-stable
+ 1042  cat .config | grep CONFIG_DYNAMIC_DEBUG
+ 1043  make menuconfig
+ 1044  ls
+ 1045  sed -i 's/# CONFIG_DYNAMIC_DEBUG is not set/CONFIG_DYNAMIC_DEBUG=y/' .config
+ 1046  ls
+ 1047  cat .config | grep CONFIG_DYNAMIC_DEBUG
+ 1048  make clean
+ 1049  make -j$(nproc)
+ 1050  cat .config | grep CONFIG_DYNAMIC_DEBUG
+ 1051  sudo make modules_install
+ 1052  sudo make install
+ 1053  make
+ 1054  sudo apt install libelf-dev elfutils libelf1
+ 1055  make defconfig
+ 1056  make -j$(nproc) zImage
+ 1057  make -j$(nproc) bzImage
+ 1058  cd ..
+ 1059  cd busybox
+ 1060  ls
+ 1061  cd _install
+ 1062  ls
+ 1063  find . | cpio -o -H newc | gzip > ../rootfs.cpio.gz
+ 1064  cd ..
+ 1065  cd _install
+ 1066  cd boot
+ 1067  ls
+ 1068  cd ..
+ 1069  cd linux-stable/
+ 1070  ls
+ 1071  cd init
+ 1072  ls
+ 1073  cd ..
+ 1074  find bzImage
+ 1075  find . bzImage
+ 1076  cd arch
+ 1077  cd arm
+ 1078  ls
+ 1079  cd ..
+ 1080  ls
+ 1081  cd x86
+ 1082  ls
+ 1083  cd boot
+ 1084  ls
+ 1085  cd bzImage
+ 1086  cd ..
+ 1087  qemu-system-x86_64 -kernel arch/x86/boot/bzImage -append "console=ttyS0" -nographic
+ 1088  ~/repos/linux-stable/arch/x86/boot/bzImage
+ 1089  sudo ~/repos/linux-stable/arch/x86/boot/bzImage
+ 1090  cp ~/repos/linux-stable/arch/x86/boot/bzImage ~/repos/busybox/_install/boot/zImage
+ 1091  cd arch/x86/boot
+ 1092  ls
+ 1093  cd ..
+ 1094  cd busybox
+ 1095  cp ~/repos/linux-stable/arch/x86/boot/bzImage ~/repos/busybox/_install/boot/bzImage
+ 1096  cd _intall/boot
+ 1097  cd _install
+ 1098  ls
+ 1099  cd boot
+ 1100  ls
+ 1101  cd ..
+ 1102  qemu-system-arm -kernel _install/boot/bzImage -initrd rootfs.cpio.gz -nographic -machine virt -m 512 --append "root=/dev/ram0 rw console=ttyAMA0,115200 mem=512M
+ 1103  exit
+ 1104  shutdown
+ 1105  axaxax
+ 1106  ls
+ 1107  cd repos
+ 1108  cd busybox
+ 1109  ls
+ 1110  cd _install
+ 1111  ls
+ 1112  cd boot
+ 1113  ls
+ 1114  rm bzImage
+ 1115  cd ..
+ 1116  find . | cpio -o -H newc | gzip > ../rootfs.cpio.gz
+ 1117  cd ..
+ 1118  qemu-system-arm -kernel _install/boot/zImage -initrd rootfs.cpio.gz -nographic -machine virt -m 512 --append "root=/dev/ram0 rw console=ttyAMA0,115200 mem=512M
+ 1119  cd ..
+ 1120  TODO
+ 1121  cd repos
+ 1122  cd busybox
+ 1123  cd _install
+ 1124  cd boot
+ 1125  ls
+ 1126  cd zImage
+ 1127  cat zImage
+ 1128  ls
+ 1129  cd ..
+ 1130  cd linux-stable/
+ 1131  ls
+ 1132  cd arch
+ 1133  ls
+ 1134  cd x86
+ 1135  ls
+ 1136  cd biit
+ 1137  ls
+ 1138  cd boot
+ 1139  ls
+ 1140  cd ..
+ 1141  make clean
+ 1142  make defconfig
+ 1143  make menuconfig
+ 1144  cd proc
+ 1145  zgrep CONFIG_DYNAMIC_DEBUG /proc/config.gz
+ 1146  ls
+ 1147  cd arch
+ 1148  ls
+ 1149  cat Kconfig
+ 1150  ls
+ 1151  cd x86
+ 1152  ls
+ 1153  cd boot
+ 1154  ls
+ 1155  cd ..
+ 1156  make -j4
+ 1157  cd arch/x86/boot
+ 1158  ls
+ 1159  cp bzImage ~/repos/busybox/_install/boot
+ 1160  cd ..
+ 1161  cd busybox
+ 1162  ls
+ 1163  cd _isntall
+ 1164  cd _install
+ 1165  ls
+ 1166  cd boot
+ 1167  ls
+ 1168  cat zImage
+ 1169  ls
+ 1170  cat bzImage
+ 1171  ls
+ 1172  rm zImage
+ 1173  ls
+ 1174  mv bzImage zImage
+ 1175  ls
+ 1176  ls -l
+ 1177  chmod +x zImage
+ 1178  ls
+ 1179  cd ..
+ 1180  find . | cpio -o -H newc | gzip > ../rootfs.cpio.gz
+ 1181  cd ..
+ 1182  qemu-system-arm -kernel _install/boot/zImage -initrd rootfs.cpio.gz -nographic -machine virt -m 512 --append "root=/dev/ram0 rw console=ttyAMA0,115200 mem=512M
+ 1183  cd ..
+ 1184  cd ~
+ 1185  cd repos
+ 1186  cd linux-stable
+ 1187  ls
+ 1188  make -j4 zImage modules am335x-boneblack.dtb
+ 1189  ls ~/Downloads
+ 1190  export PATH=/opt/cc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/bin:$PATH
+ 1191  export CROSS_COMPILE='ccache arm-linux-gnueabihf-'
+ 1192  export ARCH=arm
+ 1193  ls
+ 1194  ls fragments
+ 1195  cat fragments/bb.cfg
+ 1196  cat fragments/bbb.cfg
+ 1197  ./scripts/kconfig/merge_config.sh arch/arm/configs/multi_v7_defconfig fragments/bbb.cfg
+ 1198  make -j4 zImage modules am335x-boneblack.dtb
+ 1199  ls
+ 1200  find . .config
+ 1201  ls
+ 1202  cd usr
+ 1203  ls
+ 1204  cd ..
+ 1205  ls
+ 1206  cd boot
+ 1207  cd arch
+ 1208  ls
+ 1209  cd arm
+ 1210  cd boot
+ 1211  ls
+ 1212  cd ..
+ 1213  ls
+ 1214  cd ..
+ 1215  ;s
+ 1216  ls
+ 1217  cd ..
+ 1218  ls
+ 1219  make menuconfig
+ 1220  vim Kconfig
+ 1221  ls
+ 1222  ls -a
+ 1223  vim .config
+ 1224  make -j4 zImage modules am335x-boneblack.dtb
+ 1225  ls
+ 1226  cd arch
+ 1227  cd arm
+ 1228  kls
+ 1229  ls
+ 1230  cd boot
+ 1231  ls
+ 1232  cp zImage ~/repos/busybox/_install/boot
+ 1233  cd dts
+ 1234  ls
+ 1235  cp am335x-boneblack.dtb ~/repos/busybox/_install/boot
+ 1236  cd ..c
+ 1237  cd ..
+ 1238  cd
+ 1239  cd ~/repos
+ 1240  cd busybox
+ 1241  ls
+ 1242  cd _isntall
+ 1243  cd _install
+ 1244  ls
+ 1245  cd boot
+ 1246  ls
+ 1247  cd ..
+ 1248  rm zImage
+ 1249  cd boot
+ 1250  rm zImage
+ 1251  rm am335x-boneblack.dtb 
+ 1252  ls
+ 1253  cp ~/repos/linux-stable/arch/arm/boot/zImage .
+ 1254  ls
+ 1255  cp ~/repos/linux-stable/arch/arm/boot/dts/am335x-boneblack.dtb .
+ 1256  ls
+ 1257  cd ..
+ 1258  find . | cpio -o -H newc | gzip > ../rootfs.cpio.gz
+ 1259  cd .
+ 1260  cd ..
+ 1261  qemu-system-arm -kernel _install/boot/zImage -initrd rootfs.cpio.gz -nographic -machine virt -m 512 --append "root=/dev/ram0 rw console=ttyAMA0,115200 mem=512M
+ 1262  cd ~/repos/busybox
+ 1263  ls
+ 1264  make defconfig
+ 1265  make -j4
+ 1266  ls
+ 1267  cd _install
+ 1268  ls
+ 1269  rm hello1.ko
+ 1270  rm hello2.ko
+ 1271  ls
+ 1272  cd boot
+ 1273  ls
+ 1274  cd ..
+ 1275  cd etc
+ 1276  ls
+ 1277  cd init.d
+ 1278  ls
+ 1279  cat rcS
+ 1280  cd ..
+ 1281  cd /etc/init.d
+ 1282  cd -
+ 1283  cd etc
+ 1284  cd init.d
+ 1285  ls
+ 1286  cd ..
+ 1287  ln -s bin/busybox _install/init
+ 1288  cd ..
+ 1289  ln -s bin/busybox _install/init
+ 1290  cd _install
+ 1291  ls
+ 1292  cd boot
+ 1293  ls
+ 1294  cp ~/repos/linux-stable/System.map .
+ 1295  cp ~/repos/linux-stable/.config ./config
+ 1296  cp ~/repos/linux-stable
+ 1297  cd ~/repos/linux-stable
+ 1298  export INSTALL_MOD_PATH=~/repos/busybox/_install
+ 1299  export ARCH=arm
+ 1300  make modules_install
+ 1301  cd ..
+ 1302  ${CROSS_COMPILE}readelf -d _install/bin/busybox | grep NEEDED
+ 1303  cd busybox
+ 1304  ${CROSS_COMPILE}readelf -d _install/bin/busybox | grep NEEDED
+ 1305  cd _install/lib
+ 1306  libc_dir=$(${CROSS_COMPILE}gcc -print -sysroot)/lib
+ 1307  libc_dir=$(${CROSS_COMPILE}gcc -print-sysroot)/lib
+ 1308  cp -a $libc_dir/*.so*
+ 1309  cp -a $libc_dir/*.so* .
+ 1310  cd -
+ 1311  echo '$MODALIAS=.* root:root 660 @modprobe "$MODALIAS"' > _install/etc/mdev.conf
+ 1312  echo 'root:x:0:' > _install/etc/group
+ 1313  echo 'root:x:0:0:root:/root:/bin/sh' > _install/etc/passwd
+ 1314  echo 'root::10933:0:99999:7:::' > _install/etc/shadow
+ 1315  echo "nameserver 8.8.8.8" > _install/etc/resolv.conf
+ 1316  cd _install
+ 1317  find . | cpio -o -H newc | gzip > ../rootfs.cpio.gz
+ 1318  cd .
+ 1319  cd ..
+ 1320  qemu-system-arm -kernel _install/boot/zImage -initrd rootfs.cpio.gz -machine virt -nographic -m 512 --append "root=/dev/ram0 rw console=ttyAMA0,115200 mem=512M"
+ 1321  cd ..
+ 1322  ls
+ 1323  cd hello2
+ 1324  ls
+ 1325  make clear
+ 1326  rm hello1.ko
+ 1327  rm hello1.mod.c
+ 1328  rm hello1.mod.o
+ 1329  rm hello1.o
+ 1330  rm hello2.ko
+ 1331  rm hello2.mod.c
+ 1332  rm hello2.mod.o
+ 1333  rm hello2.o
+ 1334  rm modules.order
+ 1335  rm Module.symvers
+ 1336  ls
+ 1337  vim hello1.c
+ 1338  ls
+ 1339  make
+ 1340  'ls
+ 1341  `
+ 1342  cd hello2
+ 1343  ls
+ 1344  make
+ 1345  ls
+ 1346  cp hello1.ko ~/repos/busybox/_install/hello1.ko
+ 1347  cp hello2.ko ~/repos/busybox/_install/hello2.ko
+ 1348  ls
+ 1349  cd ..
+ 1350  cd repos/busybox
+ 1351  cd _isntall
+ 1352  ls
+ 1353  cd _install
+ 1354  ls
+ 1355  find . | cpio -o -H newc | gzip > ../rootfs.cpio.gz
+ 1356  cd ..
+ 1357  qemu-system-arm -kernel _install/boot/zImage -initrd rootfs.cpio.gz -machine virt -nographic -m 512 --append "root=/dev/ram0 rw console=ttyAMA0,115200 mem=512M"
+ 1358  cd ..
+ 1359  cd hello2
+ 1360  ls
+ 1361  make clear
+ 1362  make clean
+ 1363  ls
+ 1364  export KDIR=$HOME/repos/linux-stable
+ 1365  ls ~/Downloads
+ 1366  export PATH=/opt/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/bin:$PATH
+ 1367  export CROSS_COMPILE='ccache arm-linux-gnueabihf-'
+ 1368  export ARCH=arm
+ 1369  make
+ 1370  cp hello1.ko ~/repos/busybox/_install/hello1.ko
+ 1371  cp hello2.ko ~/repos/busybox/_install/hello2.ko
+ 1372  cd ..
+ 1373  cd repos/busybox/_install
+ 1374  ls
+ 1375  find . | cpio -o -H newc | gzip > ../rootfs.cpio.gz
+ 1376  cd ..
+ 1377  qemu-system-arm -kernel _install/boot/zImage -initrd rootfs.cpio.gz -machine virt -nographic -m 512 --append "root=/dev/ram0 rw console=ttyAMA0,115200 mem=512M"
+ 1378  cd
+ 1379  ls ~/Downloads
+ 1380  rm hello1.h
+ 1381  cd Downloads
+ 1382  rm hello1.h
+ 1383  rm hello2.c
+ 1384  rm Makefile
+ 1385  rm hello1.c
+ 1386  ls
+ 1387  cd ..
+ 1388  cp /hello2/ /Downloads
+ 1389  cd hello2
+ 1390  ls
+ 1391  cp hello1.c ~/Downloads/
+ 1392  cp hello2.c ~/Downloads/
+ 1393  cp hello1.h ~/Downloads/
+ 1394  cp Makefile ~/Downloads/
+ 1395  cd ..
+ 1396  cd Downloads
+ 1397  ls
+ 1398  history > HISTORY.txt
